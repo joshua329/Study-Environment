@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "Node Run Time"
+		},
+		{
+			"path": "Hello Javascript"
+		},
+		{
+			"path": "Number Guesser/number-guesser-starting"
+		},
+		{
+			"path": "../../../University/COMP2110"
+		},
+		{
+			"path": "Credit Card"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "COMP2110"
+	}
+}

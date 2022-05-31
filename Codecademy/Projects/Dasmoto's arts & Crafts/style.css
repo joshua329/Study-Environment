@@ -1,0 +1,43 @@
+#header {
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url("./img/pattern.webp");
+    margin-bottom: 50px;
+}
+
+#brushes {
+    background-color: mediumspringgreen;
+}
+
+#frames {
+    background-color: lightcoral;
+}
+
+#paint {
+    background-color: skyblue;
+}
+
+img {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+p, h4 {
+    font-family: Helvetica;
+}
+
+.title {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: 32px;
+    color: white;
+}
+
+.pricing {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
