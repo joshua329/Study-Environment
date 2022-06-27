@@ -8,26 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\CHARLIE\\.nuget\\packages\\": {}
+    "/Users/joshua/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CHARLIE\\Desktop\\Study-Environment\\ASP.NET\\TestApp1\\TestApp1\\TestApp1.csproj",
+      "projectUniqueName": "/Users/joshua/Desktop/Work/Study-Environment/ASP.NET/TestApp1/TestApp1/TestApp1.csproj",
       "projectName": "TestApp1",
-      "projectPath": "C:\\Users\\CHARLIE\\Desktop\\Study-Environment\\ASP.NET\\TestApp1\\TestApp1\\TestApp1.csproj",
-      "packagesPath": "C:\\Users\\CHARLIE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CHARLIE\\Desktop\\Study-Environment\\ASP.NET\\TestApp1\\TestApp1\\obj\\",
+      "projectPath": "/Users/joshua/Desktop/Work/Study-Environment/ASP.NET/TestApp1/TestApp1/TestApp1.csproj",
+      "packagesPath": "/Users/joshua/.nuget/packages/",
+      "outputPath": "/Users/joshua/Desktop/Work/Study-Environment/ASP.NET/TestApp1/TestApp1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CHARLIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/joshua/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -63,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
       }
     }
   }
