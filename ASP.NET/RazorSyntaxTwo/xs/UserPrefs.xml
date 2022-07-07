@@ -4,15 +4,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Razor Syntax 1/Pages/Index.cshtml">
-    <Files>
-      <File FileName="TestApp1/Program.cs" Line="1" Column="1" />
-      <File FileName="TestApp1/Pages/Index.cshtml" Line="29" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TestApp1" expanded="True" selected="True" />
+          <Node name="RazorSyntaxTwo" expanded="True">
+            <Node name="RazorSyntaxTwo" selected="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -22,6 +20,6 @@
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <DisabledProjects>
-    <String>TestApp1/TestApp1.csproj</String>
+    <String>RazorSyntaxTwo/RazorSyntaxTwo.csproj</String>
   </DisabledProjects>
 </Properties>

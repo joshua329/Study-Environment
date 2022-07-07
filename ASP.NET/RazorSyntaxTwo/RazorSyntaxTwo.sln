@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorSyntaxTwo", "RazorSyntaxTwo\RazorSyntaxTwo.csproj", "{E045AE4D-8E61-491C-AB2F-4A7DDE9DA75A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E045AE4D-8E61-491C-AB2F-4A7DDE9DA75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E045AE4D-8E61-491C-AB2F-4A7DDE9DA75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E045AE4D-8E61-491C-AB2F-4A7DDE9DA75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E045AE4D-8E61-491C-AB2F-4A7DDE9DA75A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1C1C14C-2B6A-4584-A46E-02DE3E4E5360}
+	EndGlobalSection
+EndGlobal
