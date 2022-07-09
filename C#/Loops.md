@@ -1,5 +1,6 @@
 ### Jump Statements
 **BREAK**
+```
 while (playerIsAlive) 
 { 
 // this code will keep running
@@ -11,8 +12,9 @@ while (playerIsAlive)
     break; 
    } 
  } 
-
+```
 **CONTINUE**
+```
 int bats = 10;
  
 for (int i = 0; i <= 10; i++)
@@ -24,8 +26,9 @@ for (int i = 0; i <= 10; i++)
   // this will be skipped until i is no longer less than 9
   Console.WriteLine(i);
 }
-
+```
 **RETURN**
+```
 class MainClass {
  public static void Main (string[] args) {
    UnlockDoor();
@@ -33,7 +36,8 @@ class MainClass {
   // after it hits the return statement, it will move on to this method
    PickUpSword();
  }
- 
+``` 
+```
  static bool UnlockDoor()
  {
    bool doorIsLocked = true;
@@ -54,3 +58,4 @@ class MainClass {
    return false;
  }
 }
+```
