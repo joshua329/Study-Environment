@@ -27,8 +27,8 @@ When in comes to LINQ queries can be written in 2 ways
 Query Syntax can be written in a multi-line statement. Such as
 ```
 var longLoudHeroes = from h in heroes
-								 where h.Length > 6
-								 select h.ToUpper();
+	where h.Length > 6
+	select h.ToUpper();
 ```
 
 #### Method Syntax
