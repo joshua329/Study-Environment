@@ -1,0 +1,91 @@
+/* Viewport Meta Tag
+the viewport, which is the total viewable area for a user, this area varies depending on device. The viewport is smaller on a mobile device and larger on a desktop.
+Based on the size of the viewport, the meta tag (<meta>) is used to instruct the browser on how to render the webpage’s scale and dimensions. For instance, say if a web page is 960px and the device is 320px wide. Adding the viewport meta tag will squish the content down until it is 320px — there is no need for the user to zoom out and view the whole page!
+
+We can break down the added <meta> tag into the following essential components:
+- the name="viewport" attribute: tells the browser to display the web page at the same width as its screen
+- the content attribute: defines the values for the <meta> tag, including width and initial-scale
+- the width=device-width key-value pair: controls the size of the viewport in which it sets the width of the viewport to equal the width of the device
+- the initial-scale=1 key-value pair: sets the initial zoom level 
+
+Read more about scale at MDN’s viewport documentation
+https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag#viewport_basics
+*/
+
+/* HTML --> View port
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+*/
+
+
+/* Media Queries
+CSS uses media queries to adapt a website’s content to different screen sizes. With media queries, CSS can detect the size of the current screen and apply different CSS styles depending on the width of the screen.
+*/
+@media only screen and (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+}
+
+
+/* Range
+Specific screen sizes can be targeted by setting multiple width and height media features. min-width and min-height are used to set the minimum width and minimum height, respectively. Conversely, max-width and max-height set the maximum width and maximum height, respectively. By using multiple widths and heights, a range can be set for a media query.
+*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* ruleset for 320px - 480px */
+}
+
+@media only screen and (min-width: 320px) { 
+    /* ruleset for >= 320px */
+}
+  
+@media only screen and (min-width: 480px) { 
+    /* ruleset for >= 480px */
+}
+
+
+/* Dots Per Inch (DPI)
+Another media feature we can target is screen resolution. Many times we will want to supply higher quality media (images, video, etc.) only to users with screens that can support high resolution media. Targeting screen resolution also helps users avoid downloading high resolution (large file size) images that their screen may not be able to properly display.
+
+To target by resolution, we can use the min-resolution and max-resolution media features. These media features accept a resolution value in either dots per inch (dpi) or dots per centimeter (dpc). 
+
+Learn more about resolution measurements here
+https://en.wikipedia.org/wiki/Dots_per_inch
+*/
+@media only screen and (min-resolution: 300dpi) {
+    /* CSS for high resolution screens */
+}
+
+
+/* And Operator
+The and operator allows us to create a range by using min-width and max-width in the same media query, and can be used to require multiple media features. Therefore, we can use the and operator to require both a max-width of 480px and to have a min-resolution of 300dpi.
+*/
+@media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+    /* CSS ruleset */
+}
+
+
+/* Comma Separated List
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list. For example, if we needed to apply a style when only one of the below is true: 
+- The screen is more than 480 pixels wide, and
+- The screen is in landscape mode
+*/
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+
+
+/* Breakpoints
+The points at which media queries are set are called breakpoints. Breakpoints are the screen sizes at which your web page does not appear properly. 
+
+The example belowq creates a screen size range the size of a tablet in landscape mode and also identifies the orientation.
+However, setting breakpoints for every device imaginable would be incredibly difficult because there are many devices of differing shapes and sizes. In addition, new devices are released with new screen sizes every year.
+
+Rather than set breakpoints based on specific devices, the best practice is to resize your browser to view where the website naturally breaks based on its content. The dimensions at which the layout breaks or looks odd become your media query breakpoints. Within those breakpoints, we can adjust the CSS to make the page resize and reorganize.
+
+By observing the dimensions at which a website naturally breaks, you can set media query breakpoints that create the best possible user experience on a project by project basis, rather than forcing every project to fit a certain screen size. Different projects have different needs, and creating a responsive design should be no different.
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS ruleset */
+}
