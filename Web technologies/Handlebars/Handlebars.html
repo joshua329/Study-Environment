@@ -1,0 +1,28 @@
+/* Handle bars
+Handle bars is a CDN (Content Delivery Network)
+https://developer.mozilla.org/en-US/docs/Glossary/CDN
+*/
+
+
+/* Handlebars "If" block helper */
+{{#if argument}}
+  // Code to include if the provided argument is truthy 
+{{/if}}
+
+
+/* "Else" section */
+{{#if argument}}
+  // Code to include if the provided argument is truthy 
+{{else}}
+  // Code to include if the provided argument is falsy 
+{{/if}}
+
+
+/* Each and This */
+{{#each someArray}}
+  <p>{{this}} is the current element!</p>
+{{/each}}
+
+const context = {
+    someArray: ['First', 'Second', 'Third'] 
+}
