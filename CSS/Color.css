@@ -1,0 +1,53 @@
+/* Foreground vs Background
+Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the foreground color of the heading has been styled.
+Conversely, when a heading is styled so that its background appears yellow, the background color of the heading has been styled
+
+In CSS, these two design aspects can be styled with the following two properties:
+- color - this property styles an element’s foreground color.
+- background-color - this property styles an element’s background color.
+*/
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+
+/* Hexadecimal
+A hex color begins with a hash (#) followed by three of six characters
+darkseagreen: #8FBC8F
+sienna:       #A0522D
+saddlebrown:  #8B4513
+brown:        #A52A2A
+black:        #000000 or #000
+white:        #FFFFFF or #FFF
+aqua:         #00FFFF or #0FF
+*/
+
+
+/* RGB Colours
+“RGB value” or just “RGB”, that uses decimal numbers rather than hexadecimal numbers.
+Each of the three values represents a color component, and each can have a decimal number value from 0 to 255. The first number represents the amount of red, the second is green, and the third is blue. These colors are exactly the same as hex, but with a different syntax and a different number system.
+*/
+h1 {
+    color: rgb(23, 45, 23);
+}
+
+
+/* Hue, Saturation, and Lightness
+There’s another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as HSL.
+
+The syntax for HSL is similar to the decimal form of RGB, though it differs in important ways. The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively. 
+*/
+.light-green {
+    color: hsl(120, 60%, 70%);
+}
+
+
+/* Opacity and Alpha
+To use opacity in the HSL color scheme, use hsla instead of hsl, and four values instead of three.
+*/
+.transparent-color {
+    color: hsla(34, 100%, 50%, 0.1);
+    color: rgba(234, 45, 98, 0.33);
+    color: transparent; /* rgba(0, 0, 0, 0) */
+}
