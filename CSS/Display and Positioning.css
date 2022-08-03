@@ -49,8 +49,8 @@ The z-index property controls how far back or how far forward an element should 
     position: relative;
     z-index: 1;
 }
-   
-  .green-box {
+
+.green-box {
     background-color: green;
     position: relative;
     top: -170px;
