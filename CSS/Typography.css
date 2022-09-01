@@ -1,0 +1,108 @@
+/* Font-Family
+in the example below, there is something that is called as a fallback font. This means that if the font Caslon is not avalible, then 'Web Safe' fonts-fonts that are the same across all browers and operating systems-will be used.
+
+list of web safe fonts:
+https://www.cssfontstack.com/
+
+Serif and Sans-Serif 
+There is a difference between these two fonts:
+- Serif: Have extra details on the ends of the main strokes of the letters. These strokes are called serifs
+- Sans serif: lacks those extra strokes on the ends of letters and have flat ends. This gives them a cleaner and more modern look.
+*/
+h1 {
+    font-family: Caslon, Georgia, 'Times New Roman', Times, serif
+}
+
+
+/* Font-weight
+In CSS, the font-weight property controls how bold or thin text appears. It can be specified with keywords or numerical values.
+
+KEYWORDS
+The font-weight property can take any one of these keyword values:
+- bold: Bold font weight.
+n- ormal: Normal font weight. This is the default value.
+- lighter: One font weight lighter than the element’s parent value.
+- bolder: One font weight bolder than the element’s parent value
+
+NUMERICAL VALUES
+Numerical values can range from 1 (lightest) to 1000 (boldest), but it is common practice to use increments of 100. A font weight of 400 is equal to the keyword value normal, and a font weight of 700 is equal to bold.
+
+
+*/
+.left-section {
+    font-weight: 700;
+}
+   
+.right-section {
+    font-weight: bold; 
+}
+
+
+/* Font Style
+You can also italicize text with the font-style property.
+The 'italic' value causes text to appear in italics. The font-style property also has a 'normal' value which is the default.
+*/
+h3 {
+    font-style: italic;
+}
+
+
+/* Text Transformation
+Text can also be styled to appear in either all uppercase or lowercase with the text-transform property.
+*/
+h1 {
+    /* can be 'lowercase' alternatively */
+    text-transform: uppercase;
+}
+
+
+/* Text Layout
+We will be looking at ways text can be displayed or laid outwithin the elements container
+
+LETTER SPACING
+The 'letter-spacing' property is used to set the horizontal spacing between the individual characters in an element. It’s not common to set the spacing between letters, but it can sometimes help the readability of certain fonts or styles. The letter-spacing property takes length values in units, such as 2px or 0.5em.
+*/
+p {
+    letter-spacing: 2px;
+}
+
+/* 
+WORD SPACING
+You can set the space between words with the 'word-spacing' property. It’s also not common to increase the spacing between words, but it may help enhance the readability of bolded or enlarged text. The word-spacing property also takes length values in units, such as 3px or 0.2em.
+*/
+h1 {
+    word-spacing: 0.3em;
+}
+
+/* 
+LINE HEIGHT
+We can use the line-height property to set how tall we want each line containing our text to be. Line height values can be a unitless number, such as 1.2, or a length value, such as 12px, 5% or 2em.
+*/
+p {
+    line-height: 1.4;
+}
+
+/* TEXT Alignment
+The text-align property, aligns text to its parent element.
+*/
+h1 {
+    text-align: right;
+}
+
+
+/* Web Fonts Using <link>
+Online font services, like Google Fonts, make it easy to find and link to fonts from your site. You can browse and select fonts that match the style of your website.
+
+Google Fonts
+https://fonts.google.com/
+
+When you’re done selecting a font and its styles, you can review your selected font family, and a <link> element will be automatically generated for you to use on your site!
+
+for example: 
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+*/
+p {
+    font-family: 'Roboto', sans-serif;
+}

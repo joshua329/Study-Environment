@@ -1,0 +1,76 @@
+/* Nesting Selectors 
+In programming, a variable’s scope is the context in which a variable is defined and available to use.
+
+In Sass, it’s helpful to think of the scope of a selector as any of the code between its opening { and closing } curly brackets.
+
+Selectors that are nested inside the scope of another selector are referred to as children. The former selector is referred to as the parent. This is just like the relationship observed in HTML elements.
+*/
+//SCSS
+.parent { 
+    color: blue;
+    .child {
+      font-size: 12px;
+    }
+}
+
+// Compiles to CSS
+.parent {
+    color: blue;
+}
+
+.parent .child {
+    font-size: 12px;
+}
+
+/* Nesting Properties
+In SCSS, nesting is not limited only to selectors. You can also nest common CSS properties if you append a : colon suffix after the name of the property.
+*/
+.parent {
+    font : {
+      family: Roboto, sans-serif;
+      size: 12px;
+      decoration: none;
+    }
+}
+
+
+/* Variables in Sass
+Variables in SCSS allow you to assign an identifier of your choice to a specific value.
+Unlike in CSS, if you need to tweak a value, you’ll only have to update it in one place and the change will be reflected in multiple rules.
+
+In Sass, $ is used to define and reference a variable:
+
+$translucent-white: rgba(255,255,255,0.3);
+*/
+
+//assigning a variable 
+$translucent-white: rgba(255,255,255,0.3);
+
+
+/* Sass(y) Types
+There are different data types you can assign to a variable in CSS. In addition to the color data type we have seen, there are also:
+1. Numbers, such as 8.11, 12, and 10px. Notice that while 10 has a unit of px associated with it, it is still considered a number.
+2. Strings of text, with and without quotes. Some examples are "potato", 'tomato', span.
+3. Booleans, or simply true and false.
+4. null, which is considered an empty value.
+*/
+$icon-square-length: 300px;
+
+.icon {
+    width: $icon-square-length;
+    height: $icon-square-length;
+}
+
+
+/* Maps & Lists
+In addition to color, numbers, strings, booleans, and null, Sass also has two other data types, lists and maps.
+
+Lists can be separated by either spaces or commas. For example, the following list denotes font properties, such as:
+
+1.5em Helvetica bold;
+or 
+Helvetica, Arial, sans-serif;
+
+Maps are very similar to lists, but instead each object is a key-value pair
+(key1: value1, key2: value2);
+*/
