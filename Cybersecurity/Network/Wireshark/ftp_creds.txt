@@ -1,0 +1,6 @@
+Username:server-admin
+Password:admin
+Address: 172.16.0.221
+Directory: /srv/ftp
+
+Note: This FTP server is used for a backup for important information. Because its hosted on the localhost, its perfectly secure! The system is only accessible by a small number of users as well. This FTP server was a great idea!
