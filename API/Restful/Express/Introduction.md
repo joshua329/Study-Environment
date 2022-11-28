@@ -33,7 +33,7 @@ In this example, our `app.listen()` call will start a server listening on port `
 
 ## Writing your First Route
 
-Once the Express server is listening, it can respond to any and all requests. But how does it know what to do with these requests? To tell our server how to deal with any given request, we register a series of  *routes* . Routes define the control flow for requests based on the request’s *path* and HTTP verb.
+Once the Express server is listening, it can respond to any and all requests. But how does it know what to do with these requests? To tell our server how to deal with any given request, we register a series of  *routes*. Routes define the control flow for requests based on the request’s *path* and HTTP verb.
 
 For example, if your server receives a GET request at /monsters, we will use a route to define the appropriate functionality for that HTTP verb (GET) and path (/monsters).
 
@@ -49,3 +49,7 @@ app.get('/moods', (req, res, next) => {
   // Here we would send back the moods array in response
 });
 ```
+
+The route above will match any `GET` request to `'/moods'` and call the callback function, passing in two objects as the first two arguments. These objects represent the request sent to the server and the response that the Express server should eventually send to the client.
+
+You may notice that there’s a line with the command `app.use(express.static('public'));`. This is used to make sure that once the server is started, you can reload the browser and see the Express Yourself machine.`app.use(express.static('public'));`. This is used to make sure that once the server is started, you can reload the browser and see the Express Yourself machine.
