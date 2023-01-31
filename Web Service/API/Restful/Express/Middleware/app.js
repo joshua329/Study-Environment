@@ -56,9 +56,9 @@ const validateCard = (req, res, next) => {
 };
 
 // Get all Cards
-app.get('/cards/', (req, res, next) => {
-  res.send(cards);
-});
+  app.get('/cards/', (req, res, next) => {
+    res.send(cards);
+  });
 
 // Create a new Card
 app.post('/cards/', validateCard, (req, res, next) => {
