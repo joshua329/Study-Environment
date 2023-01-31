@@ -1,4 +1,4 @@
-# Introduction to JavaScritp Runtime Environments
+# Introduction to JavaScript Runtime Environments
 
 ## What is a runtime Environment?
 
