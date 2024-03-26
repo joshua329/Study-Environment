@@ -8,7 +8,7 @@ UX design is a highly collaborative field, where designers typically work in cro
 
 Engineers translate designs into a functioning experience, like an app or a website. They help UX teams figure out if designs are feasible from a technical standpoint and bring that idea to life. Working closely with engineers and involving them early in the design process is critical to ensure your project is set up for success.
 
-### UX Researchers
+### **UX Researchers**
 
 UX research is all about understanding what users need and expect from your product. UX researchers use methods like observations, interviews, and surveys to understand users' unique perspectives. Findings from research can inform your design decisions each step of the way. If you work at a startup or small business, there’s a good chance you’ll get to do your own UX research. At larger companies though, you’ll likely work with designated UX researchers who will provide research findings to inform your design work.
 
