@@ -1,0 +1,2 @@
+Design an accounting app
+for an art studio
